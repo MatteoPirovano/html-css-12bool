@@ -10,5 +10,6 @@
 }
 
 .padding > [class*="col-"] > .container > [class*="col-"] {
+  border: 1px solid white;
   background-color: #ff7f50;
 }
