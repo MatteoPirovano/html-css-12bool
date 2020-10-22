@@ -1,0 +1,35 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+ max-width: 1170px;
+ margin: 0 auto;
+ min height: 100px;
+}
+.container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.debug .container {
+  border: 1px solid blue;
+  height: 100%;
+  min-height: 100px;
+}
+
+[class*="col-"] {
+  float: left;
+  height: 100%;
+  min-height: 100px;
+}
+.col-1 {
+  width: calc( ( 100% / 12) *  1);
+}
+
+.col-2 {
+width: calc( (100% / 12) *  2 );
+}
